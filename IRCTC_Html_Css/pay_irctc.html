@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.js"></script>
+    <link rel="stylesheet" href="pay_irctc.css">
+</head>
+<body>
+    <div class="header">
+        <h2><center>Payment Information </center></h2>
+      </div>
+        <script type=“text/javascript”>
+ 
+            function showalert(){
+             
+            alert(“Payment Successful !!!”);
+             
+            }
+        </script>    
+<div class="row">
+    
+<div class="col-75">
+    
+<div class="container">
+    <h3><center>Payment Form</center></h3>
+<form id="validate" >
+<div class="row">
+<div class="col-50">
+<label for="fname"><i class="fa fa-user"></i> Full Name</label>
+<input type="text" id="fname" name="fullname" placeholder="Full Name" required>
+
+<label for="email"><i class="fa fa-envelope"></i> Email</label>
+<input type="text" id="email" name="email" placeholder="Full Mail" required>
+
+<label for="email"><i class="fa fa-calender"></i> Date Of Birth</label>
+<input type="date" id="email" name="dob"  required>
+
+<label for="gender"><i class="fa fa-user"></i> Gender</label>
+<select>
+    <option value="">Select</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    </select>
+
+</div>
+
+<div class="col-50">
+
+<label for="card"><i class="fa fa-card"></i> Card Type</label>
+<select required>
+    <option value="">Select</option>
+    <option value="crerdit">CreditCard</option>
+    <option value="debit">DebitCard</option>
+    <option value="ccard">CashCard</option>
+    </select>
+<label for="cname">Name on Card</label>
+<input type="text" id="cname" name="cardname" placeholder="Name Here"required>
+<label for="ccnum">Card number</label>
+<input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"required>
+<label for="expmonth">Exp Month</label>
+<input type="text" id="expmonth" name="expmonth" placeholder="Month"required>
+<div class="row">
+    <div class="col-50">
+        <label for="expyear">Exp Year</label>
+        <input type="text" id="expyear" name="expyear" placeholder="Year"required>
+    </div>
+    <div class="col-50">
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" name="cvv" placeholder="xxxx"required>
+    </div>
+</div>
+</div>
+</div>
+<input type="submit" onclick="showalert()" value="Pay Now" class="btn">
+</form>
+</div>
+    </div>
+    <div class="col-25">
+        <div class="container1">
+            <h4>Payment Total<span class="price" style="color:black"></span></h4>
+            <p><a href="#">Amount</a> <span class="price">1500</span></p>
+            <p><a href="#">Convenience Fee</a> <span class="price">0.00</span></p>
+            <p><a href="#">Tax(16.00%)</a> <span class="price">0.00</span></p>
+            <hr>
+            <p>Total Amount <span class="price" style="color:black"><b>INR 1500.0</b></span></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    
+    $('#validate').validate({
+        roles: {
+            fullname: {
+                required: true,
+            },
+            email: {
+                required: true,
+            },
+            address: {
+                required: true,
+            },
+            dob: {
+                required: true,
+            },
+            card: {
+                required:true,
+            },
+            cardname: {
+                required: true,
+            },
+            cardnumber: {
+                required: true,
+            },
+            expmonth: {
+                required: true,
+            },
+            expyear: {
+                required: true,
+            },
+            cvv: {
+                required: true,
+            },
+           
+        },
+        messages: {
+            fullname:"Enter full name*",
+            email:"Enter email*",
+            dob:"Enter dob*",
+            card:"Enter card type*",
+            cardname:"Enter card name*",
+            cardnumber:"Enter card number*",
+            expmonth:"Enter exp month*",
+            expyear:"Enter exp year*",
+            cvv:"Enter cvv*",
+        },
+    });
+</script>
+</body>
+</html>
