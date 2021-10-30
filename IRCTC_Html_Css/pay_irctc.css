@@ -11,6 +11,7 @@
   h1{
     text-align: center;
     padding-top: 30px;
+   
   }
   .header {
     background-color:#012443;
@@ -61,10 +62,11 @@ h2{
 }
 
 .container {
-    background-color: #FFFFFF;
+    background-color: #ffe26f;
     padding: 3px 18px 13px 18px;
     border: 1px solid lightgrey;
     margin-top: 90px;
+    font-family: 'Poppins', sans-serif;
     margin-left: 150px;
     border-radius: 3px;
     width: 80%;
@@ -73,6 +75,10 @@ h2{
 .container1 {
     margin-right: 70px;
     margin-top: 90px;
+    font-weight: bolder;
+  background-color: #ffe26f;
+  padding: 3px 18px 13px 18px;
+  font-family: 'Poppins', sans-serif;
 }
 .container1 p a{
     text-decoration: none;
@@ -84,6 +90,9 @@ input {
     padding: 12px;
     border: 1px solid #ffe26f;
     border-radius: 1px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+  color:black;
 }
 select {
     width: 80%;
@@ -98,6 +107,7 @@ label {
     margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
     display: block;
+    font-weight: bold;
 }
 
 .icon-container {
@@ -120,8 +130,8 @@ label {
 }
 
 .btn:hover {
-    background-color: #ffe26f;
-    color: black;
+    background-color: #083863;
+    color: white;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -137,6 +147,8 @@ span.price {
     font-family: 'Poppins', sans-serif;
     float: right;
     color: grey;
+    color: rgb(65, 63, 63);
+  font-weight: bold;
 }
 
 @media (max-width: 800px) {
